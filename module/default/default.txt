@@ -1,0 +1,9 @@
+start
+project
+project/templates
+project/static
+project/base
+project/base/templates/base
+project/base/templates/base/index.html
+project/base/urls.py
+end
