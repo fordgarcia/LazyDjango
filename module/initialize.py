@@ -13,25 +13,26 @@ class InitDependency:
     def deleteEnvironment(self):
         if self.dir_name.exists():
             shutil.rmtree(self.dir_name)
+            print("Deleted successfully :)")
         else:
-            print('Nothing to delete.')
-    
+            print("Nothing to delete :D")
+
     def installDjango(self):
         self.execute.run(
             [self.dir_name / "bin" / "python", "-m", "pip", "install", "django"]
         )
 
-    
-
     def checkInstallation(self):
         status = []
-        if self.dir_name.exists(): status.append('Environment deployed')
+        if self.dir_name.exists():
+            status.append("Environment deployed")
 
-        temp = self.dir_name / 'bin' / 'django-admin'
-        if temp.exists(): status.append('Django installed')
+        temp = self.dir_name / "bin" / "django-admin"
+        if temp.exists():
+            status.append("Django installed")
 
         print(status)
-    
+
 
 def main():
     _init = InitDependency()
