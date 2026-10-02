@@ -1,0 +1,1 @@
+Short and simple script for Django workspace creation wherein you can create a workspace that you can use to generate Django folders like project and application and use it anywhere with just one click. You can also import others' workspace to use them. This of course has a built-in default workspace.
