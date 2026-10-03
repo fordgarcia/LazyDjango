@@ -6,12 +6,12 @@ Short and simple script for Django workspace creation wherein you can create a w
 
 ## Directory Guide
 
-### Core
+### module.core
 ___
 This will be where the custom user-made workspaces are. See the documentary for the flags to create one yourself.
 
 
-### Default
+### module.default
 ___
 This will be where the default workspaces are. Will update this soon for more common defaults.
 

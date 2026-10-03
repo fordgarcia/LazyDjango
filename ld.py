@@ -34,6 +34,7 @@ class SomeDjango:
                 print('|')
         print('|-----------------------------------+')
         user_choice = self.choice()
+        # need to make sure that this has a failsafe
 
 
 def main():
