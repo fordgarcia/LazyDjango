@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess
 import shutil
-
+from .default import default
 
 class InitDjango:
     execute = subprocess
@@ -35,11 +35,7 @@ class InitDjango:
 
 
 def main():
-    _init = InitDjango()
-    _init.initializeEnvironment()
-    _init.installDjango()
-    _init.checkInstallation()
-    _init.deleteEnvironment()
+    default.check_current_availability()
 
 
 if __name__ == "__main__":
