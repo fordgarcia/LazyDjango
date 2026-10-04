@@ -3,7 +3,7 @@ import subprocess
 import shutil
 
 
-class InitDependency:
+class InitDjango:
     execute = subprocess
     dir_name = Path(".dependencies")
 
@@ -35,7 +35,7 @@ class InitDependency:
 
 
 def main():
-    _init = InitDependency()
+    _init = InitDjango()
     _init.initializeEnvironment()
     _init.installDjango()
     _init.checkInstallation()
