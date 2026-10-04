@@ -1,6 +1,7 @@
 # Workflow
 
 configuration are text files that houses paths :)
+current command:  python -m lazydjango.module.initialize
 
 1. Non-flag
     * d, default

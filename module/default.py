@@ -5,7 +5,11 @@ import subprocess
 
 class DefaultConfig:
 
-    read = Path('default.txt')
+    read = Path('module/default/default.txt')
+
+    @classmethod
+    def debug(cls):
+        return cls.read.exists()
 
     @classmethod
     def ready_process(cls):
@@ -22,8 +26,7 @@ class DefaultConfig:
         validate = {valid:Path(valid).exists() for valid in cls.read}
         return validate
 
-
-    
-DefaultConfig.ready_process()
-DefaultConfig.read_current_default()
-DefaultConfig.check_current_availability()
+if __name__ == '__main__':
+    DefaultConfig.ready_process()
+    DefaultConfig.read_current_default()
+    DefaultConfig.check_current_availability()

@@ -1,9 +1,8 @@
 start
-project
-project/templates
-project/static
-project/base
-project/base/templates/base
-project/base/templates/base/index.html
-project/base/urls.py
+templates
+static
+base
+base/templates/base
+base/templates/base/index.html
+base/urls.py
 end
